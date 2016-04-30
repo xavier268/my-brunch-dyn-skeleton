@@ -12,17 +12,16 @@
     "build": "brunch b --production"
   },
   "dependencies": {
+    "auto-reload-brunch": "^2.0.0",
     "brunch": "^2.7.4",
+    "clean-css-brunch": "^2.0.0",
+    "css-brunch": "^2.0.0",
+    "javascript-brunch": "^2.0.0",
     "jquery": "^2.2.3",
     "less": "^2.6.1",
     "less-brunch": "^2.6.0",
-    "markdown-brunch": "^1.7.2"
+    "markdown-brunch": "^1.7.2",
+    "uglify-js-brunch": "^2.0.0"
   },
-  "devDependencies": {
-    "javascript-brunch": "^2.0.0",
-    "css-brunch": "^2.0.0",
-    "uglify-js-brunch": "^2.0.0",
-    "clean-css-brunch": "^2.0.0",
-    "auto-reload-brunch": "^2.0.0"
-  }
+  "devDependencies": {}
 }

@@ -21,5 +21,5 @@ $("document").ready(function() {
   require("js/header")();                           // Here, we call the exported module function
   $("body").append(require("templates/mainbody"));  // required object is the compiled template string
   require("js/footer")();
-  
+
 });
