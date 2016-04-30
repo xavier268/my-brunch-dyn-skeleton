@@ -1,2 +1,16 @@
 # my-brunch-dyn-skeleton
-My skeleton for dynamic, brunch based, websites.
+
+This is my skeleton for dynamic, brunch based, websites.
+
+## Install
+
+```auto
+nvm use stable
+npm install
+npm start
+```
+
+## Installing on AWS S3
+
+Make sure to remove autolaod capability. It increases the size of the js download,
+and keeps polling was unsucessfully.
