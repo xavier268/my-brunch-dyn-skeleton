@@ -9,9 +9,10 @@
   },
   "scripts": {
     "start": "brunch watch --server",
-    "build": "brunch b --production" 
+    "build": "brunch b --production"
   },
   "dependencies": {
+    "brunch": "^2.7.4",
     "jquery": "^2.2.3",
     "markdown-brunch": "^1.7.2"
   },
