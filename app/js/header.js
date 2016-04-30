@@ -4,14 +4,14 @@
 /* globals module */
 "use strict";
 
-/* We define the generated footer for the page */
+/* We define the generated header for the page */
 
 var $ = require("jquery");
-var foot = require("templates/footer.md");
+var head = require("templates/header.md");
 
 var show = function() {
   // Generate footer from template
-  $("body").append(foot);
+  $("body").append(head);
 };
 
 // Now, exporting the function itself.

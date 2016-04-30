@@ -1,0 +1,2 @@
+Put here the assets that are used as saved as a reference, but should not be
+used/exported to public folder.

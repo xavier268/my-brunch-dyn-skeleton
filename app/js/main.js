@@ -4,24 +4,22 @@
 /* globals require:false */
 "use strict";
 
+/*******************************************************************************
+This module will trigger (side effect) the display of all the site.
+You just need to require it from the index.html file, after downloading
+the app.js compiled scripts.
+*******************************************************************************/
+
 var $ = require('jquery');
 
-console.log("Entering main.js");
+console.log("jquery version : " + $().jquery + " ok !");
 
-console.log("Checking jquery version : ");
-console.log($('body').jquery);
+console.log("Launching page display upon full load ... ");
 
-console.log("Preparing to display something in the page ...");
 $("document").ready(function() {
-  $("body").append("This is the new body ...");
-  console.log("Message was displayed");
 
-  console.log("Now, adding template data ...");
-  var tpl = require("templates/README");
-  $("body").append(tpl); // tpl is directly the compiled template string ...
-
-  console.log("Now, adding footer");
-  var foot = require("js/footer");
-  foot();
-
+  require("js/header")();                           // Here, we call the exported module function
+  $("body").append(require("templates/mainbody"));  // required object is the compiled template string
+  require("js/footer")();
+  
 });
