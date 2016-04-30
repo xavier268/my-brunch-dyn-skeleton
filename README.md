@@ -14,3 +14,6 @@ npm start
 
 Make sure to remove autolaod capability. It increases the size of the js download,
 and keeps polling was unsucessfully.
+
+You can use the provided script **remopileForProduction.sh** to do so.
+**Do not RELY** on the "npm build" script - that will **NOT** work !
