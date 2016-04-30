@@ -19,6 +19,7 @@ console.log("Launching page display upon full load ... ");
 $("document").ready(function() {
 
   require("js/header")();                           // Here, we call the exported module function
+  require("js/menu");                               // We generate the nav menu
   $("body").append(require("templates/mainbody"));  // required object is the compiled template string
   require("js/footer")();
 
